@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    897944,      19000]
-NotebookOptionsPosition[    895537,      18952]
-NotebookOutlinePosition[    895885,      18967]
-CellTagsIndexPosition[    895842,      18964]
+NotebookDataLength[    897181,      18971]
+NotebookOptionsPosition[    894784,      18923]
+NotebookOutlinePosition[    895132,      18938]
+CellTagsIndexPosition[    895089,      18935]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -188,9 +188,10 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"indicador", "[", 
    RowBox[{"[", 
-    RowBox[{"1", ",", "10"}], "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.7359317844128838`*^9, 
-  3.7359318456498528`*^9}},ExpressionUUID->"a6b890a4-1b35-4892-8649-\
+    RowBox[{"1", ",", "11"}], "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7359317844128838`*^9, 3.7359318456498528`*^9}, {
+  3.7365929087046824`*^9, 
+  3.7365929094309216`*^9}},ExpressionUUID->"a6b890a4-1b35-4892-8649-\
 249817c5d8c1"],
 
 Cell[CellGroupData[{
@@ -257,7 +258,7 @@ Cell[BoxData[
                  AnimatorBox[Dynamic[$CellContext`i659$$], {1, 18, 1},
                   AnimationDirection->Forward,
                   AnimationRate->Automatic,
-                  AnimationRunTime->1.285759449005127,
+                  AnimationRunTime->0.,
                   AnimationRunning->False,
                   AnimationTimeIndex->4.521053566652199,
                   
@@ -332,6 +333,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{1.6060272464565846`, 0.}, {
                     2.3939727535434154`, 70335.}, "RoundingRadius" -> 0]},
                     
@@ -832,8 +834,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-39224, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -1052,9 +1053,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -1789,8 +1790,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[409423, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -2010,9 +2010,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -2752,8 +2752,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-530463, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -2973,9 +2972,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -3713,8 +3712,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-313112, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -3885,9 +3883,8 @@ Cell[BoxData[
                     InsetBox["\<\"HRV\"\>", 
                     Offset[{0., -1.9999999999999998}, {7., 0.}], {0, 1}, 
                     Automatic, {1, 0}], 
-                    InsetBox["\<\"GEO\"\>", 
-                    Offset[{0., -1.9999999999999998}, {8., 0.}], {0, 1}, 
-                    Automatic, {1, 0}], 
+                    InsetBox["\<\"GEO\"\>", Offset[{0., -1.9999999999999998}, 
+                    {8., 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"KAZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -3934,9 +3931,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -4149,6 +4146,7 @@ Cell[BoxData[
                     
                     RectangleBox[{0.6060272464565847, 0.}, {
                     1.3939727535434154`, -99.}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{51.55696661828739, 60.36756168359944}, {
                     39.96336414665064, 40.470535981647515`}}],
                     StatusArea[#, -99]& ,
@@ -4198,7 +4196,6 @@ Cell[BoxData[
                     
                     RectangleBox[{2.6060272464565846`, 0.}, {
                     3.3939727535434154`, -101568.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{72.6513062409289, 81.46190130624095}, {
                     39.96336414665064, 47.82123219677638}}],
                     StatusArea[#, -101568]& ,
@@ -4382,6 +4379,7 @@ Cell[BoxData[
                     
                     RectangleBox[{10.606027246456584`, 0.}, {
                     11.393972753543416`, -54162.}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{157.02866473149498`, 
                     165.83925979680703`}, {39.96336414665064, 
                     44.38700987494016}}],
@@ -4433,7 +4431,6 @@ Cell[BoxData[
                     
                     RectangleBox[{12.606027246456584`, 0.}, {
                     13.393972753543416`, -9185.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{178.12300435413647`, 
                     186.93359941944857`}, {39.96336414665064, 
                     41.128751060249456`}}],
@@ -4619,6 +4616,7 @@ Cell[BoxData[
                     
                     RectangleBox[{20.606027246456584`, 0.}, {
                     21.393972753543416`, 189092.}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{262.5003628447026, 271.3109579100146}, {
                     26.265014417066762`, 40.46336414665064}}],
                     StatusArea[#, 189092]& ,
@@ -4662,6 +4660,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{22.606027246456584`, 0.}, {
                     23.393972753543416`, 47446.}, "RoundingRadius" -> 0]},
                     
@@ -4674,8 +4673,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[47446, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -4825,9 +4823,8 @@ Cell[BoxData[
                      0.}]}]}, {}}}, 
                     StyleBox[
                     {Thickness[Tiny], 
-                    InsetBox["\<\"ALB\"\>", 
-                    Offset[{0., -1.9999999999999998}, \
-{0.9999999999999999, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"ALB\"\>", Offset[{0., -1.9999999999999998}, 
+                    {0.9999999999999999, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"ARM\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {1.9999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -4895,9 +4892,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -5183,9 +5180,9 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{3.6060272464565846`, 0.}, {
                     4.393972753543416, -23021.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{83.19847605224967, 92.00907111756172}, {
                     39.96336414665064, 42.13106933314584}}],
                     StatusArea[#, -23021]& ,
@@ -5420,9 +5417,9 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{13.606027246456584`, 0.}, {
                     14.393972753543416`, -29965.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{188.67017416545724`, 
                     197.48076923076928`}, {39.96336414665064, 
                     42.63411198181543}}],
@@ -5639,8 +5636,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-1432290, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -5654,7 +5650,6 @@ Cell[BoxData[
                     LineBox[{{23.393972753543412`, 0.}, 
                     Offset[{-1.102182119232618*^-15, -6.}, {
                     23.393972753543412`, 
-                    
                     0.}]}], {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
 {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
                     LineBox[{{1.3939727535434152`, 0.}, 
@@ -5815,8 +5810,9 @@ Cell[BoxData[
                     InsetBox["\<\"GEO\"\>", 
                     Offset[{0., -1.9999999999999998}, {8., 0.}], {0, 1}, 
                     Automatic, {1, 0}], 
-                    InsetBox["\<\"KAZ\"\>", Offset[{0., -1.9999999999999998}, 
-                    {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"KAZ\"\>", 
+                    Offset[{0., -1.9999999999999998}, \
+{8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"XKX\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -5860,9 +5856,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -6174,7 +6170,6 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
-                    
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -726484.}, "RoundingRadius" -> 0]},
                     
@@ -6311,6 +6306,7 @@ Cell[BoxData[
                     
                     RectangleBox[{10.606027246456584`, 0.}, {
                     11.393972753543416`, -276249.}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{157.02866473149498`, 
                     165.83925979680703`}, {39.96336414665064, 
                     60.47560905625981}}],
@@ -6362,7 +6358,6 @@ Cell[BoxData[
                     
                     RectangleBox[{12.606027246456584`, 0.}, {
                     13.393972753543416`, -131953.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{178.12300435413647`, 
                     186.93359941944857`}, {39.96336414665064, 
                     50.02240599859457}}],
@@ -6631,8 +6626,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-3264491, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -6809,9 +6803,8 @@ Cell[BoxData[
                     InsetBox["\<\"KAZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"XKX\"\>", 
-                    Offset[{0., -1.9999999999999998}, \
-{9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"XKX\"\>", Offset[{0., -1.9999999999999998}, 
+                    {9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"KGZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {10.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -6852,9 +6845,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -7067,6 +7060,7 @@ Cell[BoxData[
                     
                     RectangleBox[{0.6060272464565847, 0.}, {
                     1.3939727535434154`, -179606.}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{51.55696661828739, 60.36756168359944}, {
                     39.96336414665064, 53.474521686534096`}}],
                     StatusArea[#, -179606]& ,
@@ -7353,7 +7347,6 @@ Cell[BoxData[
                     
                     RectangleBox[{12.606027246456584`, 0.}, {
                     13.393972753543416`, -165309.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{178.12300435413647`, 
                     186.93359941944857`}, {39.96336414665064, 
                     52.438807293096716`}}],
@@ -7537,6 +7530,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{19.606027246456584`, 0.}, {
                     20.393972753543416`, -64674.}, "RoundingRadius" -> 0]},
                     
@@ -7588,7 +7582,6 @@ Cell[BoxData[
                     
                     RectangleBox[{21.606027246456584`, 0.}, {
                     22.393972753543416`, -242636.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{273.0475326560233, 281.8581277213354}, {
                     39.96336414665064, 58.04058996787689}}],
                     StatusArea[#, -242636]& ,
@@ -7623,8 +7616,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-2812650, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -7844,9 +7836,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -8109,7 +8101,6 @@ Cell[BoxData[
                     
                     RectangleBox[{2.6060272464565846`, 0.}, {
                     3.3939727535434154`, 36524.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{72.6513062409289, 81.46190130624095}, {
                     37.317464132248546`, 40.46336414665064}}],
                     StatusArea[#, 36524]& ,
@@ -8345,7 +8336,6 @@ Cell[BoxData[
                     
                     RectangleBox[{12.606027246456584`, 0.}, {
                     13.393972753543416`, -12079.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{178.12300435413647`, 
                     186.93359941944857`}, {39.96336414665064, 
                     41.33840045904695}}],
@@ -8475,6 +8465,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -82491.}, "RoundingRadius" -> 0]},
                     
@@ -8615,8 +8606,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-507109, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -8787,9 +8777,8 @@ Cell[BoxData[
                     InsetBox["\<\"HRV\"\>", 
                     Offset[{0., -1.9999999999999998}, {7., 0.}], {0, 1}, 
                     Automatic, {1, 0}], 
-                    InsetBox["\<\"GEO\"\>", 
-                    Offset[{0., -1.9999999999999998}, {8., 0.}], {0, 1}, 
-                    Automatic, {1, 0}], 
+                    InsetBox["\<\"GEO\"\>", Offset[{0., -1.9999999999999998}, 
+                    {8., 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"KAZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -8823,8 +8812,9 @@ Cell[BoxData[
                     InsetBox["\<\"TUR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {18.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"TKM\"\>", Offset[{0., -1.9999999999999998}, 
-                    {19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"TKM\"\>", 
+                    Offset[{0., -1.9999999999999998}, \
+{19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"UKR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {20.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -8835,9 +8825,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -9100,7 +9090,6 @@ Cell[BoxData[
                     
                     RectangleBox[{2.6060272464565846`, 0.}, {
                     3.3939727535434154`, 53580.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{72.6513062409289, 81.46190130624095}, {
                     36.081880115009405`, 40.46336414665064}}],
                     StatusArea[#, 53580]& ,
@@ -9336,7 +9325,6 @@ Cell[BoxData[
                     
                     RectangleBox[{12.606027246456584`, 0.}, {
                     13.393972753543416`, -47911.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{178.12300435413647`, 
                     186.93359941944857`}, {39.96336414665064, 
                     43.93417007124869}}],
@@ -9417,6 +9405,7 @@ Cell[BoxData[
                     
                     RectangleBox[{15.606027246456584`, 0.}, {
                     16.393972753543416`, 2.157349*^6}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{209.76451378809878`, 
                     218.57510885341082`}, {-116.32098998132966`, 
                     40.46336414665063}}],
@@ -9570,7 +9559,6 @@ Cell[BoxData[
                     
                     RectangleBox[{21.606027246456584`, 0.}, {
                     22.393972753543416`, -140130.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{273.0475326560233, 281.8581277213354}, {
                     39.96336414665064, 50.61477059222522}}],
                     StatusArea[#, -140130]& ,
@@ -9604,8 +9592,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[305794, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -9812,8 +9799,9 @@ Cell[BoxData[
                     InsetBox["\<\"TUR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {18.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"TKM\"\>", Offset[{0., -1.9999999999999998}, 
-                    {19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"TKM\"\>", 
+                    Offset[{0., -1.9999999999999998}, \
+{19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"UKR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {20.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -9824,9 +9812,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -10089,7 +10077,6 @@ Cell[BoxData[
                     
                     RectangleBox[{2.6060272464565846`, 0.}, {
                     3.3939727535434154`, 0.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{72.6513062409289, 81.46190130624095}, {
                     39.96336414665064, 40.46336414665064}}],
                     StatusArea[#, 0]& ,
@@ -10136,7 +10123,6 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
-                    
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -161371.}, "RoundingRadius" -> 0]},
                     
@@ -10405,6 +10391,7 @@ Cell[BoxData[
                     
                     RectangleBox[{15.606027246456584`, 0.}, {
                     16.393972753543416`, 1.017884*^6}, "RoundingRadius" -> 0]},
+                    
                     ImageSizeCache->{{209.76451378809878`, 
                     218.57510885341082`}, {-33.774980236759326`, 
                     40.46336414665064}}],
@@ -10592,8 +10579,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[1256956, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -10607,6 +10593,7 @@ Cell[BoxData[
                     LineBox[{{23.393972753543412`, 0.}, 
                     Offset[{-1.102182119232618*^-15, -6.}, {
                     23.393972753543412`, 
+                    
                     0.}]}], {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
 {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
                     LineBox[{{1.3939727535434152`, 0.}, 
@@ -10767,9 +10754,8 @@ Cell[BoxData[
                     InsetBox["\<\"GEO\"\>", 
                     Offset[{0., -1.9999999999999998}, {8., 0.}], {0, 1}, 
                     Automatic, {1, 0}], 
-                    InsetBox["\<\"KAZ\"\>", 
-                    Offset[{0., -1.9999999999999998}, \
-{8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"KAZ\"\>", Offset[{0., -1.9999999999999998}, 
+                    {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"XKX\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -10800,8 +10786,9 @@ Cell[BoxData[
                     InsetBox["\<\"TUR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {18.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"TKM\"\>", Offset[{0., -1.9999999999999998}, 
-                    {19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"TKM\"\>", 
+                    Offset[{0., -1.9999999999999998}, \
+{19.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"UKR\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {20.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -10812,9 +10799,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -11077,7 +11064,6 @@ Cell[BoxData[
                     
                     RectangleBox[{2.6060272464565846`, 0.}, {
                     3.3939727535434154`, 0.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{72.6513062409289, 81.46190130624095}, {
                     39.96336414665064, 40.46336414665064}}],
                     StatusArea[#, 0]& ,
@@ -11124,7 +11110,6 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
-                    
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
                     
@@ -11363,7 +11348,6 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
-                    
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -150000.}, "RoundingRadius" -> 0]},
                     
@@ -11442,6 +11426,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -11456,8 +11441,8 @@ Cell[BoxData[
                     Style[-99999, {}], "Tooltip"]& ]}, 
                     {RGBColor[
                     0.7977275454545454, 0.4679130909090909, 
-                    0.2902775454545454], EdgeForm[{Opacity[
-                    0.5389999999999999], Thickness[Small]}], 
+                    0.2902775454545454], EdgeForm[{Opacity[0.5389999999999999]
+                    , Thickness[Small]}], 
                     TagBox[
                     TooltipBox[
                     TagBox[
@@ -11580,8 +11565,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[1562472, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -11758,9 +11742,8 @@ Cell[BoxData[
                     InsetBox["\<\"KAZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"XKX\"\>", 
-                    Offset[{0., -1.9999999999999998}, \
-{9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"XKX\"\>", Offset[{0., -1.9999999999999998}, 
+                    {9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"KGZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {10.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -11801,9 +11784,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -12116,7 +12099,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -12194,6 +12176,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{7.606027246456585, 0.}, {
                     8.393972753543416, -50000.}, "RoundingRadius" -> 0]},
                     
@@ -12354,7 +12337,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -74999.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     45.896500034837665`}}],
@@ -12430,6 +12412,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -12572,8 +12555,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-1482526, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -12750,9 +12732,8 @@ Cell[BoxData[
                     InsetBox["\<\"KAZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {8.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
-                    InsetBox["\<\"XKX\"\>", 
-                    Offset[{0., -1.9999999999999998}, \
-{9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
+                    InsetBox["\<\"XKX\"\>", Offset[{0., -1.9999999999999998}, 
+                    {9.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
                     InsetBox["\<\"KGZ\"\>", 
                     Offset[{0., -1.9999999999999998}, \
 {10.999999999999998, 0.}], {0, 1}, Automatic, {1, 0}], 
@@ -12793,9 +12774,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -13108,7 +13089,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -13347,7 +13327,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -40001.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     43.361147699276266`}}],
@@ -13423,6 +13402,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -13564,8 +13544,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-1010527, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -13785,9 +13764,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -14100,7 +14079,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -14339,7 +14317,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -40001.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     43.361147699276266`}}],
@@ -14415,6 +14392,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -14555,8 +14533,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-379526, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -14776,9 +14753,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -15091,7 +15068,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -15330,7 +15306,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -40001.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     43.361147699276266`}}],
@@ -15406,6 +15381,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -15546,8 +15522,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-354529, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -15767,9 +15742,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -16082,7 +16057,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -16321,7 +16295,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -40001.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     43.361147699276266`}}],
@@ -16397,6 +16370,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -16537,8 +16511,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-354529, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -16758,9 +16731,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -17073,7 +17046,6 @@ Cell[BoxData[
                     
                     RectangleBox[{4.606027246456585, 0.}, {
                     5.393972753543416, -2506.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{93.74564586357042, 
                     102.55624092888247`}, {39.96336414665064, 
                     40.64490574768261}}],
@@ -17312,7 +17284,6 @@ Cell[BoxData[
                     
                     RectangleBox[{14.606027246456584`, 0.}, {
                     15.393972753543416`, -40001.}, "RoundingRadius" -> 0]},
-                    
                     ImageSizeCache->{{199.217343976778, 
                     208.02793904209005`}, {39.96336414665064, 
                     43.361147699276266`}}],
@@ -17388,6 +17359,7 @@ Cell[BoxData[
                     GrayLevel[0.5], 
                     AbsoluteThickness[1.5], 
                     Opacity[0.66]}], {}, {}], 
+                    
                     RectangleBox[{17.606027246456584`, 0.}, {
                     18.393972753543416`, -99999.}, "RoundingRadius" -> 0]},
                     
@@ -17528,8 +17500,7 @@ Cell[BoxData[
                     Annotation[#, 
                     Style[-354529, {}], 
                     "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
-                  StyleBox[
-                   StyleBox[{
+                  StyleBox[{
                     {Thickness[Tiny], 
                     LineBox[{{0.15026833631484804`, 0.}, {23.858846841887985`,
                      0.}}], 
@@ -17749,9 +17720,9 @@ Cell[BoxData[
                     Offset[{0., -1.9999999999999998}, \
 {22.999999999999996, 0.}], {0, 1}, Automatic, {1, 0}]}, "GraphicsLabel",
                     StripOnInput->False]}, "GraphicsTicks",
-                    StripOnInput->False]},
-                    Antialiasing->False], "GraphicsAxes",
-                   StripOnInput->False]},
+                    StripOnInput->False]}, "GraphicsAxes",
+                   StripOnInput->False,
+                   Antialiasing->False]},
                  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
                  Axes->{False, True},
                  AxesLabel->{None, None},
@@ -18975,32 +18946,32 @@ Cell[3236, 90, 1376, 35, 67, "Input",ExpressionUUID->"f49c5122-1ee1-4b5c-aef4-4e
 Cell[4615, 127, 709, 17, 52, "Output",ExpressionUUID->"400bfdb4-f15f-4a88-8cdc-4e28507122ef"]
 }, Open  ]],
 Cell[5339, 147, 1811, 37, 86, "Input",ExpressionUUID->"20d3639f-f2ae-4c4a-86c1-74573a30449c"],
-Cell[7153, 186, 278, 7, 48, "Input",ExpressionUUID->"a6b890a4-1b35-4892-8649-249817c5d8c1"],
+Cell[7153, 186, 331, 8, 48, "Input",ExpressionUUID->"a6b890a4-1b35-4892-8649-249817c5d8c1"],
 Cell[CellGroupData[{
-Cell[7456, 197, 710, 19, 86, "Input",ExpressionUUID->"1ec8b0b6-d1e1-4219-8ef7-81afcf53bae8"],
-Cell[8169, 218, 290, 5, 32, "Output",ExpressionUUID->"b71e523e-ee45-4cd5-b42f-6e4063bf645c"]
+Cell[7509, 198, 710, 19, 86, "Input",ExpressionUUID->"1ec8b0b6-d1e1-4219-8ef7-81afcf53bae8"],
+Cell[8222, 219, 290, 5, 32, "Output",ExpressionUUID->"b71e523e-ee45-4cd5-b42f-6e4063bf645c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8496, 228, 247, 5, 28, "Input",ExpressionUUID->"68022383-9dcb-412c-a925-78afc1a5e9ae"],
-Cell[8746, 235, 848042, 17780, 275, "Output",ExpressionUUID->"5284ae89-9b46-4843-bfc3-f6e7b250c28d"]
+Cell[8549, 229, 247, 5, 28, "Input",ExpressionUUID->"68022383-9dcb-412c-a925-78afc1a5e9ae"],
+Cell[8799, 236, 847236, 17750, 275, "Output",ExpressionUUID->"5284ae89-9b46-4843-bfc3-f6e7b250c28d"]
 }, Open  ]],
-Cell[856803, 18018, 175, 3, 28, "Input",ExpressionUUID->"abd3d779-7686-468c-97f3-33af3b7e4507"],
+Cell[856050, 17989, 175, 3, 28, "Input",ExpressionUUID->"abd3d779-7686-468c-97f3-33af3b7e4507"],
 Cell[CellGroupData[{
-Cell[857003, 18025, 342, 8, 28, "Input",ExpressionUUID->"50e39ed1-e41b-42b8-912d-1ee686dc2bed"],
-Cell[857348, 18035, 230, 4, 32, "Output",ExpressionUUID->"8d2d08f3-ece5-4f34-9905-dad9a9687826"]
+Cell[856250, 17996, 342, 8, 28, "Input",ExpressionUUID->"50e39ed1-e41b-42b8-912d-1ee686dc2bed"],
+Cell[856595, 18006, 230, 4, 32, "Output",ExpressionUUID->"8d2d08f3-ece5-4f34-9905-dad9a9687826"]
 }, Open  ]],
-Cell[857593, 18042, 156, 3, 28, InheritFromParent,ExpressionUUID->"be2ae8d3-db00-4def-8111-d539d74c0bd7"],
+Cell[856840, 18013, 156, 3, 28, "Input",ExpressionUUID->"be2ae8d3-db00-4def-8111-d539d74c0bd7"],
 Cell[CellGroupData[{
-Cell[857774, 18049, 160, 3, 28, "Input",ExpressionUUID->"0f898f9c-5f35-4495-81c0-afdc303a976d"],
-Cell[857937, 18054, 625, 12, 32, "Output",ExpressionUUID->"382bc2dc-3ca3-4cb4-9801-74f62b939aaa"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[858599, 18071, 498, 11, 28, "Input",ExpressionUUID->"3cc932e0-31c2-40bb-b5d4-ef6190c2528b"],
-Cell[859100, 18084, 175, 3, 32, "Output",ExpressionUUID->"ab2bcf1d-2452-4b23-bfc4-a477e5e966f7"]
+Cell[857021, 18020, 160, 3, 28, "Input",ExpressionUUID->"0f898f9c-5f35-4495-81c0-afdc303a976d"],
+Cell[857184, 18025, 625, 12, 32, "Output",ExpressionUUID->"382bc2dc-3ca3-4cb4-9801-74f62b939aaa"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[859312, 18092, 228, 6, 28, "Input",ExpressionUUID->"1e759913-9e41-4edd-87c5-947fc5f950dd"],
-Cell[859543, 18100, 35978, 849, 733, "Output",ExpressionUUID->"1ad20865-e5e8-4d71-baa8-d4d2d5cf669d"]
+Cell[857846, 18042, 498, 11, 28, "Input",ExpressionUUID->"3cc932e0-31c2-40bb-b5d4-ef6190c2528b"],
+Cell[858347, 18055, 175, 3, 32, "Output",ExpressionUUID->"ab2bcf1d-2452-4b23-bfc4-a477e5e966f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[858559, 18063, 228, 6, 28, "Input",ExpressionUUID->"1e759913-9e41-4edd-87c5-947fc5f950dd"],
+Cell[858790, 18071, 35978, 849, 733, "Output",ExpressionUUID->"1ad20865-e5e8-4d71-baa8-d4d2d5cf669d"]
 }, Open  ]]
 }
 ]
