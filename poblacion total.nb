@@ -1,0 +1,1164 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     55668,       1156]
+NotebookOptionsPosition[     54140,       1125]
+NotebookOutlinePosition[     54487,       1140]
+CellTagsIndexPosition[     54444,       1137]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fulldata", "=", " ", 
+   RowBox[{
+   "Import", "[", 
+    "\"\<C:\\\\Users\\\\Jesus Enrique\\\\Documents\\\\Wolfram \
+Desktop\\\\Population1.csv\>\"", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7352420020914865`*^9, 
+  3.735242011786908*^9}},ExpressionUUID->"0eb7c56d-69c6-4e37-8cdd-\
+94e3201b5b04"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fulldata", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.735242021961387*^9, 3.735242025581747*^9}, {
+  3.7352509871324453`*^9, 
+  3.735250997751356*^9}},ExpressionUUID->"4291859a-2985-4503-bcbb-\
+62aa0096cf06"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Region\"\>", ",", "\<\"Match\"\>", ",", "\<\"Country Name\"\>",
+    ",", "\<\"Country Code\"\>", ",", "\<\"Indicator Name\"\>", 
+   ",", "\<\"Indicator Code\"\>", ",", "1960", ",", "1961", ",", "1962", ",", 
+   "1963", ",", "1964", ",", "1965", ",", "1966", ",", "1967", ",", "1968", 
+   ",", "1969", ",", "1970", ",", "1971", ",", "1972", ",", "1973", ",", 
+   "1974", ",", "1975", ",", "1976", ",", "1977", ",", "1978", ",", "1979", 
+   ",", "1980", ",", "1981", ",", "1982", ",", "1983", ",", "1984", ",", 
+   "1985", ",", "1986", ",", "1987", ",", "1988", ",", "1989", ",", "1990", 
+   ",", "1991", ",", "1992", ",", "1993", ",", "1994", ",", "1995", ",", 
+   "1996", ",", "1997", ",", "1998", ",", "1999", ",", "2000", ",", "2001", 
+   ",", "2002", ",", "2003", ",", "2004", ",", "2005", ",", "2006", ",", 
+   "2007", ",", "2008", ",", "2009", ",", "2010", ",", "2011", ",", "2012", 
+   ",", "2013", ",", "2014", ",", "2015", ",", "2016", ",", "2017", ",", 
+   "2018", ",", "2019", ",", "2020", ",", "2021", ",", "2022", ",", "2023", 
+   ",", "2024", ",", "2025", ",", "2026", ",", "2027", ",", "2028", ",", 
+   "2029", ",", "2030", ",", "2031", ",", "2032", ",", "2033", ",", "2034", 
+   ",", "2035", ",", "2036", ",", "2037", ",", "2038", ",", "2039", ",", 
+   "2040", ",", "2041", ",", "2042", ",", "2043", ",", "2044", ",", "2045", 
+   ",", "2046", ",", "2047", ",", "2048", ",", "2049", ",", "2050"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7352420261330585`*^9, 3.7352451457405405`*^9, {3.7352509908181915`*^9, 
+   3.7352509982500296`*^9}, 3.735251125005542*^9, 
+   3.7352527293482127`*^9},ExpressionUUID->"894a4af4-1998-4e2d-904e-\
+faa061926ba3"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.735242033954726*^9, 3.735242108330639*^9}, {
+   3.7352421472128544`*^9, 3.7352421931859627`*^9}, {3.73524225772269*^9, 
+   3.7352422614859524`*^9}, 
+   3.735242632662715*^9},ExpressionUUID->"37b026cb-9048-49ae-bfc1-\
+b3b78c50f4fb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Totalregiones", " ", "=", " ", 
+  RowBox[{"Tally", "[", 
+   RowBox[{"fulldata", "[", 
+    RowBox[{"[", 
+     RowBox[{
+      RowBox[{"2", ";;"}], ",", "1"}], "]"}], "]"}], "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.7352422637496653`*^9, 3.7352422725931034`*^9}, {
+  3.73524258403104*^9, 3.7352425860722647`*^9}, {3.7352426395748763`*^9, 
+  3.735242659125831*^9}, {3.735242696247986*^9, 3.7352426974667463`*^9}, {
+  3.735242871653776*^9, 3.735242942205041*^9}, {3.7352521964807386`*^9, 
+  3.7352521977132063`*^9}, {3.7353089679320726`*^9, 3.7353089703153486`*^9}, {
+  3.735309012569381*^9, 
+  3.7353090137228575`*^9}},ExpressionUUID->"c76e69b5-df48-4921-8f8a-\
+4c3e24010558"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"East Asia & Pacific\"\>", ",", "6125"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Eastern Europe & Central Asia\"\>", ",", "3850"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Latin America and the Caribbean\"\>", ",", "7350"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Middle East and North Africa\"\>", ",", "2275"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"South Asia\"\>", ",", "1400"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Sub-Saharan Africa\"\>", ",", "8225"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"\"\>", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.735242586860479*^9, 3.7352426598470116`*^9, 3.7352426979191165`*^9, {
+   3.7352428813136044`*^9, 3.7352429429214506`*^9}, 3.7352451479590993`*^9, 
+   3.7352521413565464`*^9, 3.7352521983024063`*^9, 3.7352527353609614`*^9, 
+   3.735252990764369*^9, 3.735253199736086*^9, 3.7353089707004833`*^9, 
+   3.735309014425652*^9},ExpressionUUID->"e021018d-460d-425b-a22e-\
+3f98cd3e9f50"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Totalpaises", " ", "=", " ", 
+   RowBox[{"Tally", "[", 
+    RowBox[{"fulldata", "[", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{"2", ";;"}], ",", "3"}], "]"}], "]"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7353093289822783`*^9, 3.735309357482026*^9}, 
+   3.73530940009932*^9},ExpressionUUID->"4d03c271-4317-4377-a783-\
+1cd70a781909"],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.7353094095905094`*^9},ExpressionUUID->"c2c65bc0-4efe-4229-9bca-\
+8b3f55cc4f9b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Poblacionregiones", " ", "=", " ", 
+    RowBox[{"GatherBy", "[", 
+     RowBox[{
+      RowBox[{"Select", "[", 
+       RowBox[{"fulldata", ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#", "[", 
+           RowBox[{"[", "6", "]"}], "]"}], "\[Equal]", 
+          "\"\<SP.POP.TOTL\>\""}], "&"}]}], "]"}], ",", "First"}], "]"}]}], 
+   ";"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.735245114968979*^9, 3.7352451280784874`*^9}, {
+   3.7352451659800496`*^9, 3.7352451822307*^9}, {3.7352452220252724`*^9, 
+   3.7352452280305705`*^9}, {3.735245335384368*^9, 3.7352453546075907`*^9}, 
+   3.7352498605033226`*^9, {3.7352503054357166`*^9, 3.7352503193208046`*^9}, {
+   3.73525036145895*^9, 3.7352503619527116`*^9}, {3.7352504329956274`*^9, 
+   3.7352504366389465`*^9}, {3.7352505867142844`*^9, 
+   3.7352505872892847`*^9}, {3.735250899803774*^9, 3.735250911147549*^9}, {
+   3.735250944180801*^9, 3.7352509703111877`*^9}, {3.735251015279351*^9, 
+   3.7352510887363806`*^9}, {3.7352511382663956`*^9, 
+   3.7352512261567297`*^9}, {3.73525134456892*^9, 3.735251572138042*^9}, {
+   3.7353089913067007`*^9, 
+   3.7353089919152803`*^9}},ExpressionUUID->"a9244533-e633-4cc9-b0b1-\
+9e92df76fcb4"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Poblaciontotal", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Total", "@@", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Replace", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{
+            RowBox[{"Except", "[", 
+             RowBox[{"_", "?", "NumberQ"}], "]"}], "\[Rule]", " ", "0"}], ",", 
+           RowBox[{"{", "1", "}"}]}], "]"}], "&"}], " ", "/@", 
+        RowBox[{"{", 
+         RowBox[{"Poblacionregiones", "[", 
+          RowBox[{"[", 
+           RowBox[{"reg", ",", "All", ",", "ano"}], "]"}], "]"}], "}"}]}], 
+       ")"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"reg", ",", "1", ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ano", ",", "7", ",", 
+       RowBox[{"Length", "[", 
+        RowBox[{"Poblacionregiones", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Regiones", " ", "=", " ", 
+    RowBox[{"Totalregiones", "[", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{"1", ";;", "6"}], ",", "1"}], "]"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.735251696109264*^9, 3.7352518904215355`*^9}, {
+   3.7352519322773466`*^9, 3.7352519356415663`*^9}, {3.7352519849955645`*^9, 
+   3.735252001166891*^9}, {3.7352520373093796`*^9, 3.735252106657467*^9}, {
+   3.735252156541404*^9, 3.735252188203006*^9}, {3.7352522570917687`*^9, 
+   3.7352523451699157`*^9}, {3.735252384325965*^9, 3.735252385350746*^9}, {
+   3.735252442414856*^9, 3.735252442703315*^9}, {3.735252491811223*^9, 
+   3.7352524963932295`*^9}, 3.735252826037575*^9, {3.7353051183180323`*^9, 
+   3.7353052837083926`*^9}, {3.7353090267263975`*^9, 3.73530902891254*^9}, {
+   3.7353090711749964`*^9, 
+   3.7353090772678156`*^9}},ExpressionUUID->"f2443d21-13c4-4965-b0b3-\
+8f923b565316"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Poblacionestotales", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Regiones", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], ",", 
+       RowBox[{"Poblaciontotal", "[", 
+        RowBox[{"[", "i", "]"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "6"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7352466299740076`*^9, 3.735246660139347*^9}, {
+   3.7352523958931384`*^9, 3.73525243168659*^9}, {3.735252506551689*^9, 
+   3.7352526134452324`*^9}, 
+   3.735309265518795*^9},ExpressionUUID->"a4e4e842-9d94-4996-8f4e-\
+2dd7debf61a1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"Poblacionestotales", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotLabels", "\[Rule]", "Regiones"}], ",", 
+     RowBox[{"DataRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1960", ",", "2050"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"ListLinePlot", "[", 
+    RowBox[{
+     RowBox[{"Poblacionestotales", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotLabels", "\[Rule]", "Regiones"}], ",", 
+     RowBox[{"DataRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1960", ",", "2050"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7352493711124516`*^9, 3.735249488050952*^9}, {
+   3.735249629355713*^9, 3.7352496756008344`*^9}, {3.7352497254798174`*^9, 
+   3.7352498151636524`*^9}, {3.7352499594107056`*^9, 3.735249975361356*^9}, {
+   3.735250142985425*^9, 3.735250144244791*^9}, {3.735305500662324*^9, 
+   3.7353055458308516`*^9}, {3.735305726051859*^9, 3.7353057265833473`*^9}, {
+   3.735305766473278*^9, 3.7353058009239674`*^9}, {3.7353058409316864`*^9, 
+   3.7353059601924753`*^9}, {3.735308633160499*^9, 3.73530867788033*^9}, {
+   3.7353087295486317`*^9, 3.7353087316320963`*^9}, {3.7353087660735707`*^9, 
+   3.735308805992615*^9}, 3.7353088403523855`*^9, {3.73530888579047*^9, 
+   3.735308923878071*^9}, {3.735309223237756*^9, 
+   3.735309242513582*^9}},ExpressionUUID->"7f39acba-c273-4cd9-9e89-\
+768e141565a0"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {{}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJw10X1IU1EYBvBpVkJm4UdlmCiJVIgWGZn0x0yrVQYVWrlJmLpM+tD1TRks
+NDVKUihSs5wlZGS4YonasFWCQ93UnLZMTUHKnKGQkqBg3uc8u3Dv5cf7nPe8
+596glMwjaleZTKZauKU3Lt1T+cKzsDbOGg1XwavXptLV8OPZNroGXpFzt0NY
+L1nb4BXcKWyQLH+VlUfXw7GGadoIx3882SVskmxShnfQzajbW/Z9ETajfjSx
+mW7H/hcs0d3CnfDvJQ20DevrTmyyCdth9Y0yuh/99jrm6SHMr8lU9giPoN/M
+YC09ivwql8W9wuPol29V0ZNYb/usp6eQX2Zw/yo8A2/Zk0HPof+npa20rEJy
+6foQu7AbHKnKpd0ly7dfHqU9UP/Xc/ib8Eq4PMxI+yCv9g3uE16DukvKHdpf
+ssnj+hgdKFnrm7f7u3Aw6s+uPqE3oN+29Gk6FLZ+ONAvvFmsL9fREdiv7OJf
+OhJ5v8iYAeGdyHuaC2k58vo+Gx2LvP8uv0FhBeq2ACUdh/kyLI/oQ+hn03TT
+8chH7PD8IXwc9lYo6CTkZ1u0dDL2m93YQKchf396gj4tOVCT5D0kfBZ5XVcY
+nQUvb9pPX5KcbG47RV/DvK4JOXS2ZF1jTQWtxTxlt4x0LvYfKLDRBfCvEAd9
+Dz6XKhsWLhLfT+FDP4AdwyF0CZwYFUmXw62JCloHjx08RlfBXuvUdDUcYNHQ
+NXB62k1aD0c58mkDrDpTTNfDTT9LaSNclV5Jm8T/+fOCbobDNa9pM7x1/g3d
+DidXvqM74dDz9bQNTshqpO1wx8v3dD98JdBID8HP+5z1EXhRl3P9KFw84ew/
+DrcF1dGTcLbqLT0FG0uc88/AFqvzfHPwbTfn+WU6ydUxzu/jCsseFtFucK8y
+bzj6P1Dqgvg=
+       "]]}, 
+     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJw10m9IU2EUBvCbzFRaZRa0qJyKomKCkoWGlnPLGhpJWQmKlv+oiDIzUJAc
+YWBQEqQmKbpIy0pj1rSN+WGVTCM/DDIxMlhgqLBikB+M7I8+59mF+15+vO95
+z8PhRpZeOlYRoChK4cq7+sVj7spcWd8MZ1h0cA98fX0D3Qdn2Z10Pxz1PGBQ
+bIG3XTbQVth18AZtg1/bHPQIXHTiJ+2EYwbiX4hH4fbAEnocVre10BOSb+4d
+7Ybrd/6jJ+HYoJSX4mm4f/c5egbWD3bRHthpnKJn4QaP2iqeh3Oy9bQXNurr
+aJ/kdVvoRViVtkAvwbdjtEPiZdj0OZ9Wule9obSZVsHBunE6GL54dc2wWA13
+3NtHh8LOsGp6C7xJ/ZjWwFNbs16Jd8AxQUV0BJy4roaOhsfGbtJxcM+3u/Qu
+OCe3g06CFya76BTYkP2IToUr7U/odDhl6imdCesCn9EGuFXpow/DZfsf0rlw
+UF0vnQfHOvz35cv9cxa6AHYl2Oki2Nj6lj4t82n6QJfDQ3++02clf53aJr4A
+R7oS6Cr40/YjdI30D6mma+G58210Pfxr7QhtgpvDv9KNsObab7oJNg1stotv
+wZ7OOPoObHGk0S1w1ftsuh2OC8+jO+HMKydpM1wbVUj3yP/0t5jug5f2ltL9
+sLuxnLbASd4K2gr7jJW0Teof+PdHYPNGf71T+nnP0KOSL6OEHpf6L/58EzKP
+kALaDdt+HKcn4dDeo/S0nD+VQ8/ASvIh2iM26ulZOd99gJ6X/hHptFfy30+l
+fTI/9R56UeZdmEwvwU1lifSy5AuLpxUz5lUcTQfASVotrYLdHzV23X/OCFZ/
+
+       "]]}, 
+     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJwt03tI01EUB/BlKxIqTP1j0JIpGUVCKUWLhHxBrqx8EVZWopVShiZiQUKL
+pAcVSQlKWk6zEF1qOnPNR8stH2AhYbpAYsEIZyJDLJYMTb/ne+HeHx/Oub/D
+vb/fCc0uSL3gp1AoTi/PlSeG4UXM8joSeqgpFm6Ap6P8msWN8IkSG22E8+bu
+G8VtsPNr2huxCU7arGkRm+GFU7N0D1xu6msVW6X+eGKb2A6vnuqgh+Arw5q3
+4hHY/eAxPQq3TC/RY/Cu4avtYge86HDRk/CfyYwOsRP2tn+mXbAtNd4knoL9
+11joGbjyd2Sn2APfPdBMz8NxzvB3Yi8cZKmjffCGiyFdYkXtiieyq2kl7ElW
+mcXr4PrZCno93H1w03txAJxW8ogOhne6/S1iFbwwfodWw9sCld1iDWzLv0Vv
+hf+9WqS3w0HhN3rEEXBU0V96NzxlKOwV74F9BW5aC/f+yOoTR8Pavm90DBwf
+l/hBnADPpZjpxBXry1RBVnES4k0pOjoZLjh3k05H/mJdJ50BayNm6Ezke3+F
+fRRnwY2Wk/R5+NqlcjoP+52DA3S+1Kv10YWI56qj+sXFiO8NyaWvw5lHq+lS
+5McZvtB6uH7tKpu4TO4vJ4q+B+cfz6EfwvaEp3Q57NT10xVwcIqHrpLzHdti
+F9fADq2ONsj3CC2mG+DS6ed0I1xcM0AbYc2+WboNDngZ/In9D0e49tNmuM1z
+hu6BTXY9bYUTztbTdrisq58ekvdN/qRH5H/7vkSPwumV6gH2P6wO09IOsT6V
+noSttZdpJ1zz5DbtgpVHntFTcJWjlZ6R+99hpz1wzOEJeh426ty0F27YuED7
+4LHX/oPsf8OKowNVtB9ckRlOK+H0osjB2P8nhG0A
+       "]]}, 
+     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJwt021Ik1EYBuCXMciZpJiRPyT8wrT8IRZhpDBDh0XEKiV12qxMFAoVKiwM
+FxmJH6GhqHPpbJuu0vxaZbZyZT+kDCokRoX4Q0NKUdDKQCq7n/vAOS8XPIf3
+OYdzh50qPnpGpSiKYX3+/2JY27Xra3DNseZk2A67K5ZpJ2w3N7eIe+Ack7ZV
+3A9Hb12kXbBzxWYWD0v9e2Ob2A2HFIRbxB44dNs3+hU8/9J1WzwOJ/4xtYsn
+pP7q4Q7xO1in97eKJ+GCqUu0F56pmaO/wD3dOZ3iaThF/5GegdV1GXfEc3DQ
+uc/0PHwitsgmXoK7TH/pFbiytt0uXoXn6lMd4jW5r/hlWun476g6R5dYDact
+ZneLfWCnZrNT7AcH7n1LB8DVm27cFQfBl5uS7omD4ZbAnffFIXBlrpcOhX9a
+KnrEkfBFQ3ivOBr+oBmjY+Fb5acfiOPgTKO6T7wbDjjioBNgW1h4vzgRTlor
+obWwWTNKp8BX9vsNiNPg31uy6ENwYVYXrYePR/6g0+GbqbpBcSb8ZrmVzoEP
++C7ReXDdQNqQOB/ebrbRhfCFBsUlPgsbXhvpErh04wv6PNyYH/FQXAYvWK7T
+5fCnya+0CfY36R6JK+GEXjtdBUfrVI/FtbC1OI+uh0NnR+lG2KSEDYtb5L5i
+rtEWuL50lrbCqyd1T5h/uErtoJ3w9HdlhPmHgxuy6X7YmzFIu6RfjeYp8w97
+dhlpt/xvyUV74LwYXzfzL+dRjPS4vK+xIXoCLqv2ecb8wz5FufSk7DcM0l55
+jzs2PGf+YW2bgZ6GlbI+ekbqO1WjzL84KoOel/P1dtFL0t+eX/QK7NoX4WH+
+YX38QXoNTi8toRUr+l9oolXi2hFaDcelT3mS/wEjNFJl
+       "]]}, 
+     {RGBColor[0.528488, 0.470624, 0.701351], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJwt02lIFHEYBvDJhFQUIosC84jyqAwM/OCWiUqtGkZlB9oh5lGCggViURIm
+kh2mfjARC4/aysxMQik8aNVNrdZcc0vdtrSSslLYQsxrqfZ5n4Fh+PE8885/
+ZvivScyISbFTFOXw/9N2xVFVEaooOZc9u7RhsMZmxbfjeLu4Bvmsuouug+N3
+ru8QN8BpHUV0I+4PuTtLP4UTFp/oFLeiX28apLXI9zpG68Q6+ElCJ92DvlvP
+tudiPXJ33xbaAKdVbu0SG9G3lD2jh+CA6ohusRn9a25GehQ2eaT0iMfQv5c3
+R48jt6wteSGeQO7avPml2AIPOw7QU3CU9fQr8Qycdc5LL16AdwTraaXS5sff
+z/aK7WGNyv+12MFmJf7nCO2MfNJ0vU+8FLnV6mMQL4dv++XRq+D65M/0aptD
+PTVh/WIvzFvSXk2vg13P270R+6H/qyiJ9rdZW9ysowOQ5/V6D4gDkT9ouUgH
+IY8r/UYHw7m5kUZxKNxbeJ/eDm/SOr0VR2Je0Jc0Ohrr01/V03vQ7/f3fyfe
+j/eNPXaFjkU/bfYrfQT5RpfwQXEC7r81fINOxvPU2ik6FX2tw64hcTrmNbVp
+6JPoG7rn6Uzk5kMxw+Iz8Ny+Gjob88LLrHSO9MNiTOI85NMVd+hLsH7DDF0A
+60aj3ouLYZ+mcroEdtL8oMtg5xKVWXwTtk/Mp6vg4KEBWgOX9Xt84P6HGwNT
+6TpZz59HdAMc6DJNN8r3T9rykfsfTv2dTbfK+mvbaC1ck7tA6+CDGaoR7n9Y
+fTST1sOlEQ9pA1zlOUYb4fIs51Huf9jd5E2b4UJ1CD0q8zsO0GOwanc6PQ6P
+TV6gJ2BzeSltgQviaukpWPFro2fk/zj20Qtw/vwIrVTZvHKRhbaDT634S9vD
+y1Qun8L+AWHshV8=
+       "]]}, 
+     {RGBColor[0.772079, 0.431554, 0.102387], PointSize[
+      0.0055000000000000005`], AbsoluteThickness[1.6], 
+      PointBox[CompressedData["
+1:eJwt021IU2EYBuCxVg1TkSljWqaW0Mg+LCIMwmYZLDFLU3DUD7VEiUWxxpKy
+WKFlISRpEZEf4KLE5UeupTlr6dKZpkuXzvJjhKiRP/bDlsTI3P08B845XNzv
+Oc/LC3dM3sWMfKFAIDi9evvfuOpqFKvPvJrExiTYAHtDZtkv4L0bK4xkI5zZ
+f/gluQXulvrYJvh8qKWJ3A7rPbeayRbYcUPeQrbCZmUl20b7WS9sJdvhkUUt
+exDODlxkO+CcewWvyE64smue7YI9QRfayJOU9/1hu+EgSZmJPAtXz0e+Ji/A
+8VEd7EX4Tq3KTPbAyTtX2Evwnp6GN+RlWF2oaif74BVRcAdZUOv39vt9bBEc
+NVf6liyGt6w51kkOhO0/QyzkELizYYodBreebe4iy+CU2NvvyJvgQ/F578nR
+8DNrjJUc67f+31gVW458eGvAB/IOuEx3kx0Pn/rxl70P3/cadN3kBDhc+pt9
+EJ626nrICjhS7GMnwyURpTayEp6JkHwkp2KeObeefRJ5lvJALzkTloc72dlY
+H+i93Ec+gzzNI7OTc5DbwnvY55B3XtP0kwvhB9Jtn8hqOGXZzb4ExyivD5C1
+sKRaMUguwv/TC8WfycVwY5aTrcf6piOGIXIJ8qqEomFyGeyVyB3kcli97hG7
+Am5fWvuFXAWLxq+wH8Pl9b/YT2FhQe4IuQ4u2jzBNtB5ODJGuf+wVDfENsLa
+oFQn9x+efTjANtH+go9/5f7DaWoH2wJr2rLGuP9wtGuSbaP59vxx7j/s0HjY
+g7Cht9jF/afzMgdMcP9h2e4nbBfNj4v7xv2HxXe72G5Yp0j/zv2HFfvn2Atw
+SX7xJPcfnjaFTnH/4TCRkb0EJ544Os39h3dpZ9g+Oi/N1Rnuf53fItkGN1kI
+j2aq2CK4fOG5O+k/TGxqHQ==
+       "]]}, {}}, {{}, {}}, {{GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.352142*^9}], 
+           Offset[{0, 0}, {2059.075, 2.390970519029016*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.352142*^9}], 
+           Offset[{0, 0}, {2059.075, 2.390970519029016*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{105., 7.000000000000023}, {2059.075, 2.390970519029016*^9}],
+            Offset[{105., -6.999999999999977}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., -6.999999999999998}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 7.000000000000002}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"East Asia & Pacific\"\>",
+          BoxRotation->0.], 
+         Offset[{57.5, 1.27675647831893*^-14}, \
+{2059.075, 2.390970519029016*^9}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2053.675, 4.21058*^8}], 
+           Offset[{0, 0}, {2059.075, 3.487725130564894*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2053.675, 4.21058*^8}], 
+           Offset[{0, 0}, {2059.075, 3.487725130564894*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{158., 7.500000000000035}, {2059.075, 3.487725130564894*^8}],
+            Offset[{158., -7.499999999999965}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., -7.499999999999997}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 7.500000000000003}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Eastern Europe & Central Asia\"\>",
+          BoxRotation->0.], 
+         Offset[{84., 1.865174681370263*^-14}, \
+{2059.075, 3.487725130564894*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2053.675, 7.78233*^8}], 
+           Offset[{0, 0}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2053.675, 7.78233*^8}], 
+           Offset[{0, 0}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{173., 7.000000000000038}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{173., -6.999999999999962}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 8.25603670679298*^8}],
+            Offset[{10., 7.000000000000003}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Latin America and the Caribbean\"\>",
+          BoxRotation->0.], 
+         Offset[{91.5, 2.0317081350640365*^-14}, \
+{2059.075, 8.25603670679298*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2053.675, 5.66012*^8}], 
+           Offset[{0, 0}, {2059.075, 5.909268162642125*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2053.675, 5.66012*^8}], 
+           Offset[{0, 0}, {2059.075, 5.909268162642125*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{151., 7.000000000000034}, {2059.075, 5.909268162642125*^8}],
+            Offset[{151., -6.999999999999966}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., -6.999999999999998}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 7.000000000000002}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Middle East and North Africa\"\>",
+          BoxRotation->0.], 
+         Offset[{80.5, 1.787459069646502*^-14}, \
+{2059.075, 5.909268162642125*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.288634*^9}], 
+           Offset[{0, 0}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.288634*^9}], 
+           Offset[{0, 0}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{67., 7.000000000000015}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{67., -6.999999999999985}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 7.000000000000003}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"South Asia\"\>",
+          BoxRotation->0.], 
+         Offset[{38.5, 8.548717289613705*^-15}, \
+{2059.075, 2.156293688523636*^9}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.235516*^9}], 
+           Offset[{0, 0}, {2059.075, 1.9216168341085503`*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.235516*^9}], 
+           Offset[{0, 0}, {2059.075, 1.9216168341085503`*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{108., 7.000000000000024}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{108., -6.999999999999976}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 7.000000000000003}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Sub-Saharan Africa\"\>",
+          BoxRotation->0.], 
+         Offset[{59., 1.3100631690576847*^-14}, \
+{2059.075, 1.9216168341085503*^9}], {0, 0}]}]}, {}}, {}, {}}, {{}, {{}, {}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJw10X1IU1EYBvBpVkJm4UdlmCiJVIgWGZn0x0yrVQYVWrlJmLpM+tD1TRks
+NDVKUihSs5wlZGS4YonasFWCQ93UnLZMTUHKnKGQkqBg3uc8u3Dv5cf7nPe8
+596glMwjaleZTKZauKU3Lt1T+cKzsDbOGg1XwavXptLV8OPZNroGXpFzt0NY
+L1nb4BXcKWyQLH+VlUfXw7GGadoIx3882SVskmxShnfQzajbW/Z9ETajfjSx
+mW7H/hcs0d3CnfDvJQ20DevrTmyyCdth9Y0yuh/99jrm6SHMr8lU9giPoN/M
+YC09ivwql8W9wuPol29V0ZNYb/usp6eQX2Zw/yo8A2/Zk0HPof+npa20rEJy
+6foQu7AbHKnKpd0ly7dfHqU9UP/Xc/ib8Eq4PMxI+yCv9g3uE16DukvKHdpf
+ssnj+hgdKFnrm7f7u3Aw6s+uPqE3oN+29Gk6FLZ+ONAvvFmsL9fREdiv7OJf
+OhJ5v8iYAeGdyHuaC2k58vo+Gx2LvP8uv0FhBeq2ACUdh/kyLI/oQ+hn03TT
+8chH7PD8IXwc9lYo6CTkZ1u0dDL2m93YQKchf396gj4tOVCT5D0kfBZ5XVcY
+nQUvb9pPX5KcbG47RV/DvK4JOXS2ZF1jTQWtxTxlt4x0LvYfKLDRBfCvEAd9
+Dz6XKhsWLhLfT+FDP4AdwyF0CZwYFUmXw62JCloHjx08RlfBXuvUdDUcYNHQ
+NXB62k1aD0c58mkDrDpTTNfDTT9LaSNclV5Jm8T/+fOCbobDNa9pM7x1/g3d
+DidXvqM74dDz9bQNTshqpO1wx8v3dD98JdBID8HP+5z1EXhRl3P9KFw84ew/
+DrcF1dGTcLbqLT0FG0uc88/AFqvzfHPwbTfn+WU6ydUxzu/jCsseFtFucK8y
+bzj6P1Dqgvg=
+       "]]}, 
+     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJw10m9IU2EUBvCbzFRaZRa0qJyKomKCkoWGlnPLGhpJWQmKlv+oiDIzUJAc
+YWBQEqQmKbpIy0pj1rSN+WGVTCM/DDIxMlhgqLBikB+M7I8+59mF+15+vO95
+z8PhRpZeOlYRoChK4cq7+sVj7spcWd8MZ1h0cA98fX0D3Qdn2Z10Pxz1PGBQ
+bIG3XTbQVth18AZtg1/bHPQIXHTiJ+2EYwbiX4hH4fbAEnocVre10BOSb+4d
+7Ybrd/6jJ+HYoJSX4mm4f/c5egbWD3bRHthpnKJn4QaP2iqeh3Oy9bQXNurr
+aJ/kdVvoRViVtkAvwbdjtEPiZdj0OZ9Wule9obSZVsHBunE6GL54dc2wWA13
+3NtHh8LOsGp6C7xJ/ZjWwFNbs16Jd8AxQUV0BJy4roaOhsfGbtJxcM+3u/Qu
+OCe3g06CFya76BTYkP2IToUr7U/odDhl6imdCesCn9EGuFXpow/DZfsf0rlw
+UF0vnQfHOvz35cv9cxa6AHYl2Oki2Nj6lj4t82n6QJfDQ3++02clf53aJr4A
+R7oS6Cr40/YjdI30D6mma+G58210Pfxr7QhtgpvDv9KNsObab7oJNg1stotv
+wZ7OOPoObHGk0S1w1ftsuh2OC8+jO+HMKydpM1wbVUj3yP/0t5jug5f2ltL9
+sLuxnLbASd4K2gr7jJW0Teof+PdHYPNGf71T+nnP0KOSL6OEHpf6L/58EzKP
+kALaDdt+HKcn4dDeo/S0nD+VQ8/ASvIh2iM26ulZOd99gJ6X/hHptFfy30+l
+fTI/9R56UeZdmEwvwU1lifSy5AuLpxUz5lUcTQfASVotrYLdHzV23X/OCFZ/
+
+       "]]}, 
+     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJwt03tI01EUB/BlKxIqTP1j0JIpGUVCKUWLhHxBrqx8EVZWopVShiZiQUKL
+pAcVSQlKWk6zEF1qOnPNR8stH2AhYbpAYsEIZyJDLJYMTb/ne+HeHx/Oub/D
+vb/fCc0uSL3gp1AoTi/PlSeG4UXM8joSeqgpFm6Ap6P8msWN8IkSG22E8+bu
+G8VtsPNr2huxCU7arGkRm+GFU7N0D1xu6msVW6X+eGKb2A6vnuqgh+Arw5q3
+4hHY/eAxPQq3TC/RY/Cu4avtYge86HDRk/CfyYwOsRP2tn+mXbAtNd4knoL9
+11joGbjyd2Sn2APfPdBMz8NxzvB3Yi8cZKmjffCGiyFdYkXtiieyq2kl7ElW
+mcXr4PrZCno93H1w03txAJxW8ogOhne6/S1iFbwwfodWw9sCld1iDWzLv0Vv
+hf+9WqS3w0HhN3rEEXBU0V96NzxlKOwV74F9BW5aC/f+yOoTR8Pavm90DBwf
+l/hBnADPpZjpxBXry1RBVnES4k0pOjoZLjh3k05H/mJdJ50BayNm6Ezke3+F
+fRRnwY2Wk/R5+NqlcjoP+52DA3S+1Kv10YWI56qj+sXFiO8NyaWvw5lHq+lS
+5McZvtB6uH7tKpu4TO4vJ4q+B+cfz6EfwvaEp3Q57NT10xVwcIqHrpLzHdti
+F9fADq2ONsj3CC2mG+DS6ed0I1xcM0AbYc2+WboNDngZ/In9D0e49tNmuM1z
+hu6BTXY9bYUTztbTdrisq58ekvdN/qRH5H/7vkSPwumV6gH2P6wO09IOsT6V
+noSttZdpJ1zz5DbtgpVHntFTcJWjlZ6R+99hpz1wzOEJeh426ty0F27YuED7
+4LHX/oPsf8OKowNVtB9ckRlOK+H0osjB2P8nhG0A
+       "]]}, 
+     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJwt021Ik1EYBuCXMciZpJiRPyT8wrT8IRZhpDBDh0XEKiV12qxMFAoVKiwM
+FxmJH6GhqHPpbJuu0vxaZbZyZT+kDCokRoX4Q0NKUdDKQCq7n/vAOS8XPIf3
+OYdzh50qPnpGpSiKYX3+/2JY27Xra3DNseZk2A67K5ZpJ2w3N7eIe+Ack7ZV
+3A9Hb12kXbBzxWYWD0v9e2Ob2A2HFIRbxB44dNs3+hU8/9J1WzwOJ/4xtYsn
+pP7q4Q7xO1in97eKJ+GCqUu0F56pmaO/wD3dOZ3iaThF/5GegdV1GXfEc3DQ
+uc/0PHwitsgmXoK7TH/pFbiytt0uXoXn6lMd4jW5r/hlWun476g6R5dYDact
+ZneLfWCnZrNT7AcH7n1LB8DVm27cFQfBl5uS7omD4ZbAnffFIXBlrpcOhX9a
+KnrEkfBFQ3ivOBr+oBmjY+Fb5acfiOPgTKO6T7wbDjjioBNgW1h4vzgRTlor
+obWwWTNKp8BX9vsNiNPg31uy6ENwYVYXrYePR/6g0+GbqbpBcSb8ZrmVzoEP
++C7ReXDdQNqQOB/ebrbRhfCFBsUlPgsbXhvpErh04wv6PNyYH/FQXAYvWK7T
+5fCnya+0CfY36R6JK+GEXjtdBUfrVI/FtbC1OI+uh0NnR+lG2KSEDYtb5L5i
+rtEWuL50lrbCqyd1T5h/uErtoJ3w9HdlhPmHgxuy6X7YmzFIu6RfjeYp8w97
+dhlpt/xvyUV74LwYXzfzL+dRjPS4vK+xIXoCLqv2ecb8wz5FufSk7DcM0l55
+jzs2PGf+YW2bgZ6GlbI+ekbqO1WjzL84KoOel/P1dtFL0t+eX/QK7NoX4WH+
+YX38QXoNTi8toRUr+l9oolXi2hFaDcelT3mS/wEjNFJl
+       "]]}, 
+     {RGBColor[0.528488, 0.470624, 0.701351], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJwt02lIFHEYBvDJhFQUIosC84jyqAwM/OCWiUqtGkZlB9oh5lGCggViURIm
+kh2mfjARC4/aysxMQik8aNVNrdZcc0vdtrSSslLYQsxrqfZ5n4Fh+PE8885/
+ZvivScyISbFTFOXw/9N2xVFVEaooOZc9u7RhsMZmxbfjeLu4Bvmsuouug+N3
+ru8QN8BpHUV0I+4PuTtLP4UTFp/oFLeiX28apLXI9zpG68Q6+ElCJ92DvlvP
+tudiPXJ33xbaAKdVbu0SG9G3lD2jh+CA6ohusRn9a25GehQ2eaT0iMfQv5c3
+R48jt6wteSGeQO7avPml2AIPOw7QU3CU9fQr8Qycdc5LL16AdwTraaXS5sff
+z/aK7WGNyv+12MFmJf7nCO2MfNJ0vU+8FLnV6mMQL4dv++XRq+D65M/0aptD
+PTVh/WIvzFvSXk2vg13P270R+6H/qyiJ9rdZW9ysowOQ5/V6D4gDkT9ouUgH
+IY8r/UYHw7m5kUZxKNxbeJ/eDm/SOr0VR2Je0Jc0Ohrr01/V03vQ7/f3fyfe
+j/eNPXaFjkU/bfYrfQT5RpfwQXEC7r81fINOxvPU2ik6FX2tw64hcTrmNbVp
+6JPoG7rn6Uzk5kMxw+Iz8Ny+Gjob88LLrHSO9MNiTOI85NMVd+hLsH7DDF0A
+60aj3ouLYZ+mcroEdtL8oMtg5xKVWXwTtk/Mp6vg4KEBWgOX9Xt84P6HGwNT
+6TpZz59HdAMc6DJNN8r3T9rykfsfTv2dTbfK+mvbaC1ck7tA6+CDGaoR7n9Y
+fTST1sOlEQ9pA1zlOUYb4fIs51Huf9jd5E2b4UJ1CD0q8zsO0GOwanc6PQ6P
+TV6gJ2BzeSltgQviaukpWPFro2fk/zj20Qtw/vwIrVTZvHKRhbaDT634S9vD
+y1Qun8L+AWHshV8=
+       "]]}, 
+     {RGBColor[0.772079, 0.431554, 0.102387], PointSize[0.008333333333333333],
+       AbsoluteThickness[1.6], LineBox[CompressedData["
+1:eJwt021IU2EYBuCxVg1TkSljWqaW0Mg+LCIMwmYZLDFLU3DUD7VEiUWxxpKy
+WKFlISRpEZEf4KLE5UeupTlr6dKZpkuXzvJjhKiRP/bDlsTI3P08B845XNzv
+Oc/LC3dM3sWMfKFAIDi9evvfuOpqFKvPvJrExiTYAHtDZtkv4L0bK4xkI5zZ
+f/gluQXulvrYJvh8qKWJ3A7rPbeayRbYcUPeQrbCZmUl20b7WS9sJdvhkUUt
+exDODlxkO+CcewWvyE64smue7YI9QRfayJOU9/1hu+EgSZmJPAtXz0e+Ji/A
+8VEd7EX4Tq3KTPbAyTtX2Evwnp6GN+RlWF2oaif74BVRcAdZUOv39vt9bBEc
+NVf6liyGt6w51kkOhO0/QyzkELizYYodBreebe4iy+CU2NvvyJvgQ/F578nR
+8DNrjJUc67f+31gVW458eGvAB/IOuEx3kx0Pn/rxl70P3/cadN3kBDhc+pt9
+EJ626nrICjhS7GMnwyURpTayEp6JkHwkp2KeObeefRJ5lvJALzkTloc72dlY
+H+i93Ec+gzzNI7OTc5DbwnvY55B3XtP0kwvhB9Jtn8hqOGXZzb4ExyivD5C1
+sKRaMUguwv/TC8WfycVwY5aTrcf6piOGIXIJ8qqEomFyGeyVyB3kcli97hG7
+Am5fWvuFXAWLxq+wH8Pl9b/YT2FhQe4IuQ4u2jzBNtB5ODJGuf+wVDfENsLa
+oFQn9x+efTjANtH+go9/5f7DaWoH2wJr2rLGuP9wtGuSbaP59vxx7j/s0HjY
+g7Cht9jF/afzMgdMcP9h2e4nbBfNj4v7xv2HxXe72G5Yp0j/zv2HFfvn2Atw
+SX7xJPcfnjaFTnH/4TCRkb0EJ544Os39h3dpZ9g+Oi/N1Rnuf53fItkGN1kI
+j2aq2CK4fOG5O+k/TGxqHQ==
+       "]]}}, {{}, {}}, {{GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.352142*^9}], 
+           Offset[{0, 0}, {2059.075, 2.390970519029016*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0, 0}, {2051.875, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.352142*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.352142*^9}], 
+           Offset[{0, 0}, {2059.075, 2.390970519029016*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{105., 7.000000000000023}, {2059.075, 2.390970519029016*^9}],
+            Offset[{105., -6.999999999999977}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., -6.999999999999998}, {2059.075, 
+            2.390970519029016*^9}], 
+           Offset[{10., 7.000000000000002}, {2059.075, 
+            2.390970519029016*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"East Asia & Pacific\"\>",
+          BoxRotation->0.], 
+         Offset[{57.5, 1.27675647831893*^-14}, \
+{2059.075, 2.390970519029016*^9}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2053.675, 4.21058*^8}], 
+           Offset[{0, 0}, {2059.075, 3.487725130564894*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0, 0}, {2051.875, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2052.775, 4.21058*^8}], 
+           Offset[{0., 0.}, {2053.675, 4.21058*^8}], 
+           Offset[{0, 0}, {2059.075, 3.487725130564894*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{158., 7.500000000000035}, {2059.075, 3.487725130564894*^8}],
+            Offset[{158., -7.499999999999965}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., -7.499999999999997}, {2059.075, 
+            3.487725130564894*^8}], 
+           Offset[{10., 7.500000000000003}, {2059.075, 
+            3.487725130564894*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Eastern Europe & Central Asia\"\>",
+          BoxRotation->0.], 
+         Offset[{84., 1.865174681370263*^-14}, \
+{2059.075, 3.487725130564894*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2053.675, 7.78233*^8}], 
+           Offset[{0, 0}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0, 0}, {2051.875, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2052.775, 7.78233*^8}], 
+           Offset[{0., 0.}, {2053.675, 7.78233*^8}], 
+           Offset[{0, 0}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{173., 7.000000000000038}, {2059.075, 8.25603670679298*^8}], 
+           Offset[{173., -6.999999999999962}, {2059.075, 
+            8.25603670679298*^8}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 8.25603670679298*^8}],
+            Offset[{10., 7.000000000000003}, {2059.075, 
+            8.25603670679298*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Latin America and the Caribbean\"\>",
+          BoxRotation->0.], 
+         Offset[{91.5, 2.0317081350640365*^-14}, \
+{2059.075, 8.25603670679298*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2053.675, 5.66012*^8}], 
+           Offset[{0, 0}, {2059.075, 5.909268162642125*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0, 0}, {2051.875, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2052.775, 5.66012*^8}], 
+           Offset[{0., 0.}, {2053.675, 5.66012*^8}], 
+           Offset[{0, 0}, {2059.075, 5.909268162642125*^8}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{151., 7.000000000000034}, {2059.075, 5.909268162642125*^8}],
+            Offset[{151., -6.999999999999966}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., -6.999999999999998}, {2059.075, 
+            5.909268162642125*^8}], 
+           Offset[{10., 7.000000000000002}, {2059.075, 
+            5.909268162642125*^8}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Middle East and North Africa\"\>",
+          BoxRotation->0.], 
+         Offset[{80.5, 1.787459069646502*^-14}, \
+{2059.075, 5.909268162642125*^8}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.288634*^9}], 
+           Offset[{0, 0}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0, 0}, {2051.875, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.288634*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.288634*^9}], 
+           Offset[{0, 0}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{67., 7.000000000000015}, {2059.075, 2.156293688523636*^9}], 
+           Offset[{67., -6.999999999999985}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 
+            2.156293688523636*^9}], 
+           Offset[{10., 7.000000000000003}, {2059.075, 
+            2.156293688523636*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"South Asia\"\>",
+          BoxRotation->0.], 
+         Offset[{38.5, 8.548717289613705*^-15}, \
+{2059.075, 2.156293688523636*^9}], {0, 0}]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.235516*^9}], 
+           Offset[{0, 0}, {2059.075, 1.9216168341085503`*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          BSplineCurveBox[{
+          Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0, 0}, {2051.875, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2052.775, 2.235516*^9}], 
+           Offset[{0., 0.}, {2053.675, 2.235516*^9}], 
+           Offset[{0, 0}, {2059.075, 1.9216168341085503`*^9}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 2.220446049250313*^-15}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], EdgeForm[None], 
+         PolygonBox[{
+          Offset[{108., 7.000000000000024}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{108., -6.999999999999976}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., -6.999999999999997}, {2059.075, 
+            1.9216168341085503`*^9}], 
+           Offset[{10., 7.000000000000003}, {2059.075, 
+            1.9216168341085503`*^9}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          EdgeForm[None]}, {}, InsetBox[
+         RotationBox["\<\"Sub-Saharan Africa\"\>",
+          BoxRotation->0.], 
+         Offset[{59., 1.3100631690576847*^-14}, \
+{2059.075, 1.9216168341085503*^9}], {0, 0}]}]}, {}}, {}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{1958.59375, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->{{All, 205.8}, {All, All}},
+  ImageSize->{854., Automatic},
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{1960., 2050.}, {0, 2.380334*^9}},
+  PlotRangeClipping->False,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.7353058017353134`*^9, 3.7353059945339613`*^9, {3.7353086387275734`*^9, 
+   3.735308669492371*^9}, 3.7353087323483305`*^9, 3.7353087727519636`*^9, 
+   3.7353088068618803`*^9, 3.7353088424240556`*^9, {3.735308889808563*^9, 
+   3.735308924928315*^9}, {3.7353092364034777`*^9, 
+   3.735309243408907*^9}},ExpressionUUID->"7a214f44-51ef-422d-a7c2-\
+724678139271"]
+}, Open  ]]
+},
+WindowSize->{970, 550},
+WindowMargins->{{10, Automatic}, {-5, Automatic}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 11, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 338, 9, 28, "Input",ExpressionUUID->"0eb7c56d-69c6-4e37-8cdd-94e3201b5b04"],
+Cell[CellGroupData[{
+Cell[924, 33, 261, 6, 28, "Input",ExpressionUUID->"4291859a-2985-4503-bcbb-62aa0096cf06"],
+Cell[1188, 41, 1708, 26, 109, "Output",ExpressionUUID->"894a4af4-1998-4e2d-904e-faa061926ba3"]
+}, Open  ]],
+Cell[2911, 70, 280, 5, 28, "Input",ExpressionUUID->"37b026cb-9048-49ae-bfc1-b3b78c50f4fb"],
+Cell[CellGroupData[{
+Cell[3216, 79, 700, 14, 28, "Input",ExpressionUUID->"c76e69b5-df48-4921-8f8a-4c3e24010558"],
+Cell[3919, 95, 1078, 25, 52, "Output",ExpressionUUID->"e021018d-460d-425b-a22e-3f98cd3e9f50"]
+}, Open  ]],
+Cell[5012, 123, 384, 10, 28, "Input",ExpressionUUID->"4d03c271-4317-4377-a783-1cd70a781909"],
+Cell[5399, 135, 149, 3, 48, "Input",ExpressionUUID->"c2c65bc0-4efe-4229-9bca-8b3f55cc4f9b"],
+Cell[5551, 140, 1252, 26, 48, "Input",ExpressionUUID->"a9244533-e633-4cc9-b0b1-9e92df76fcb4"],
+Cell[6806, 168, 1949, 47, 105, "Input",ExpressionUUID->"f2443d21-13c4-4965-b0b3-8f923b565316"],
+Cell[8758, 217, 666, 17, 28, "Input",ExpressionUUID->"a4e4e842-9d94-4996-8f4e-2dd7debf61a1"],
+Cell[CellGroupData[{
+Cell[9449, 238, 1837, 40, 105, "Input",ExpressionUUID->"7f39acba-c273-4cd9-9e89-768e141565a0"],
+Cell[11289, 280, 42835, 842, 407, "Output",ExpressionUUID->"7a214f44-51ef-422d-a7c2-724678139271"]
+}, Open  ]]
+}
+]
+*)
+
