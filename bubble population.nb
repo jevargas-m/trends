@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    196243,       3934]
-NotebookOptionsPosition[    195222,       3910]
-NotebookOutlinePosition[    195568,       3925]
-CellTagsIndexPosition[    195525,       3922]
+NotebookDataLength[    197138,       3957]
+NotebookOptionsPosition[    195890,       3929]
+NotebookOutlinePosition[    196237,       3944]
+CellTagsIndexPosition[    196194,       3941]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -159,12 +159,14 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{
         RowBox[{"-", "130"}], ",", 
-        RowBox[{"-", "30"}]}], "}"}]}], "}"}]}]}], "]"}]], "Input",
+        RowBox[{"-", "30"}]}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Background", "\[Rule]", "None"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.736861775931039*^9, 3.736861896237347*^9}, {
   3.7368620136627817`*^9, 3.7368620472511134`*^9}, {3.7368621683212233`*^9, 
   3.7368621711121287`*^9}, {3.73686271957269*^9, 3.7368627390454626`*^9}, {
   3.7368631390006657`*^9, 3.736863166243341*^9}, {3.736863203015403*^9, 
-  3.7368633403290644`*^9}},ExpressionUUID->"30b7d670-34f9-42e3-bc48-\
+  3.7368633403290644`*^9}, {3.7369360468861327`*^9, 
+  3.7369360508731604`*^9}},ExpressionUUID->"30b7d670-34f9-42e3-bc48-\
 6befeea2b61d"],
 
 Cell[BoxData[
@@ -3903,13 +3905,30 @@ DksNo9xDn0LDr8HhAKp6Bah/YPYbOUSlWN/3Nw04AADuPpXG
   PlotRangePadding->None]], "Output",
  CellChangeTimes->{
   3.736862747896727*^9, {3.7368631475492163`*^9, 3.736863167752808*^9}, {
-   3.7368632187801323`*^9, 
-   3.736863341383233*^9}},ExpressionUUID->"d9d02278-313a-42e0-bed7-\
-461c7ed9b495"]
+   3.7368632187801323`*^9, 3.736863341383233*^9}, {3.7369360522704916`*^9, 
+   3.7369360587574606`*^9}},ExpressionUUID->"7f145667-7970-4e56-b741-\
+682d68528644"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CountryData", "[", 
+  RowBox[{"\"\<Brazil\>\"", ",", "\"\<Population\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.736934412482195*^9, 
+  3.736934431147354*^9}},ExpressionUUID->"c7d91c4b-d428-47c8-8b62-\
+8371d9ad2f5c"],
+
+Cell[BoxData[
+ TemplateBox[{"201700544","\"people\"","people","\"People\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.7369344209807267`*^9, 
+  3.736934431768513*^9}},ExpressionUUID->"d5bf301e-f771-48a8-a4d8-\
+ba6419110f77"]
 }, Open  ]]
 },
 WindowSize->{869, 625},
-WindowMargins->{{78, Automatic}, {Automatic, 0}},
+WindowMargins->{{90, Automatic}, {Automatic, 95}},
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 11, 2017)",
 StyleDefinitions->"Default.nb"
 ]
@@ -3933,8 +3952,12 @@ Cell[2428, 73, 1050, 19, 52, "Output",ExpressionUUID->"aed3d932-d385-4a4d-98a1-7
 Cell[3493, 95, 814, 23, 48, "Input",ExpressionUUID->"ade87bdd-9cc7-4ddd-8d6f-d99154db51cb"],
 Cell[4310, 120, 374, 9, 48, "Input",ExpressionUUID->"cfd51b9f-126d-498d-b13f-26e19c0a701c"],
 Cell[CellGroupData[{
-Cell[4709, 133, 1352, 34, 67, "Input",ExpressionUUID->"30b7d670-34f9-42e3-bc48-6befeea2b61d"],
-Cell[6064, 169, 189142, 3738, 879, "Output",ExpressionUUID->"d9d02278-313a-42e0-bed7-461c7ed9b495"]
+Cell[4709, 133, 1457, 36, 67, "Input",ExpressionUUID->"30b7d670-34f9-42e3-bc48-6befeea2b61d"],
+Cell[6169, 171, 189192, 3738, 912, "Output",ExpressionUUID->"7f145667-7970-4e56-b741-682d68528644"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[195398, 3914, 243, 5, 28, "Input",ExpressionUUID->"c7d91c4b-d428-47c8-8b62-8371d9ad2f5c"],
+Cell[195644, 3921, 230, 5, 43, "Output",ExpressionUUID->"d5bf301e-f771-48a8-a4d8-ba6419110f77"]
 }, Open  ]]
 }
 ]
